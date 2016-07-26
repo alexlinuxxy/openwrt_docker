@@ -10,4 +10,3 @@ USER docker
 RUN git clone https://github.com/openwrt/openwrt.git
 COPY config openwrt/.config
 RUN make -C openwrt oldconfig
-RUN make -C openwrt V=s
