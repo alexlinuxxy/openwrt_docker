@@ -7,4 +7,3 @@ RUN apt-get install make libncurses5-dev libssl-dev gawk mawk autoconf automake 
 RUN useradd -m docker
 RUN su - docker
 RUN git clone https://github.com/openwrt/openwrt.git
-RUN make -C openwrt V=s 2>&1
